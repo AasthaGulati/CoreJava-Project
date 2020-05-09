@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iplworld.FXMLLoginController">
+    <children>
+        <JFXTextField fx:id="txtUsername" focusColor="#232325" labelFloat="true" layoutX="555.0" layoutY="299.0" prefHeight="44.0" prefWidth="219.0" promptText="Enter Your Username">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </JFXTextField>
+        <JFXPasswordField fx:id="pfPassword" focusColor="#2d2d2f" labelFloat="true" layoutX="548.0" layoutY="403.0" prefHeight="38.0" prefWidth="206.0" promptText="Enter Your Password">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </JFXPasswordField>
+        <JFXButton layoutX="377.0" layoutY="592.0" onAction="#loginIPLWorld" ripplerFill="#1a1d1e" style="-fx-border-color: black;" text="Login As a Admin" textFill="#282424">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <ImageView fx:id="ivIPLLogo" fitHeight="260.0" fitWidth="300.0" layoutX="508.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="img/vivo ipl.jpg" />
+            </image>
+        </ImageView>
+         
+        <ImageView fx:id="ivUsername" fitHeight="45.0" fitWidth="45.0" layoutX="440.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+              <Image url="img/username.png" /> 
+            </image>
+        </ImageView>
+         
+        <ImageView fx:id="ivPassword" fitHeight="45.0" fitWidth="45.0" layoutX="440.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="img/password.png" /> 
+            </image>
+        </ImageView>
+      <Label fx:id="lblMessage" layoutX="591.0" layoutY="481.0" prefHeight="27.0" prefWidth="163.0" textFill="#f53131">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPleaseTryAgain" layoutX="596.0" layoutY="523.0" prefHeight="27.0" prefWidth="155.0" textFill="#f54f63" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="810.0" layoutY="592.0" onAction="#loginAsAGuest" prefHeight="32.0" prefWidth="138.0" style="-fx-border-color: black;" text="Login As a Guest">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+    </children>
+</AnchorPane>

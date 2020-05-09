@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iplworld.FXMLTeamsBarChartController">
+   <children>
+      <BarChart fx:id="teamsBarChart" layoutX="320.0" layoutY="124.0" legendSide="TOP" prefHeight="452.0" prefWidth="700.0" titleSide="RIGHT">
+        <xAxis>
+          <CategoryAxis fx:id="teamAxis" label="TEAM" prefHeight="62.0" prefWidth="561.0" side="BOTTOM">
+               <tickLabelFont>
+                  <Font name="System Bold" size="9.0" />
+               </tickLabelFont>
+            </CategoryAxis>
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="trophyCountAxis" autoRanging="false" label="TROPHY COUNT" minorTickCount="2" prefHeight="310.0" prefWidth="46.0" side="LEFT" tickUnit="3.0" upperBound="6.0">
+               <tickLabelFont>
+                  <Font size="9.0" />
+               </tickLabelFont>
+            </NumberAxis>
+        </yAxis>
+      </BarChart>
+      <Label layoutX="543.0" layoutY="23.0" prefHeight="36.0" prefWidth="250.0" text="Team Trophy Counts">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox layoutX="1065.0" layoutY="613.0" prefHeight="42.0" prefWidth="230.0" spacing="5.0">
+         <children>
+            <JFXButton onAction="#exitFunction" style="-fx-border-color: black;" text="EXIT">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#backToMainMenu" style="-fx-border-color: black;" text="BACK TO MAIN MENU">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

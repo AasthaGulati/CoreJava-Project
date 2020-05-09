@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iplworld.FXMLTeamController">
+   <children>
+      <Label layoutX="344.0" layoutY="168.0" prefHeight="27.0" prefWidth="137.0" text="Team Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="243.0" prefHeight="27.0" prefWidth="131.0" text="Trophy Count">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cbTeamName" labelFloat="true" layoutX="551.0" layoutY="169.0" onAction="#fillTrophyCounts" prefHeight="25.0" prefWidth="227.0" promptText="--------------Select Team------------" />
+      <JFXTextField fx:id="txtTrophyCount" layoutX="574.0" layoutY="244.0" prefHeight="25.0" prefWidth="95.0" />
+      <TextField fx:id="txtUpdatedTeamName" layoutX="554.0" layoutY="315.0" promptText="Enter new team name" />
+      <Label layoutX="340.0" layoutY="314.0" text="New Team Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="52.0" text="UPDATE TEAM DETAILS" underline="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox layoutX="621.0" layoutY="445.0" prefHeight="47.0" prefWidth="315.0" spacing="5.0">
+         <children>
+            <JFXButton onAction="#updateTeamDetail" style="-fx-border-color: black;" text="UPDATE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#exitfunction" style="-fx-border-color: black;" text="EXIT">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#backToMainMenu" style="-fx-border-color: black;" text="BACK TO MAIN MENU">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

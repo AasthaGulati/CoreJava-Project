@@ -1,0 +1,114 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iplworld.FXMLIPLWorldMenuAsAGuestController">
+    <children>
+        <AnchorPane layoutX="2.0" prefHeight="600.0" prefWidth="156.0" style="-fx-border-color: black;">
+            <children>
+                <JFXButton layoutX="12.0" layoutY="80.0" onMouseClicked="" text="ADD A NEW PLAYER">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="8.0" layoutY="140.0" onMouseClicked="" text="UPDATE/DELETE PLAYER">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="20.0" layoutY="198.0" onMouseClicked="" text="TOP 10 BATSMEN">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="21.0" layoutY="254.0" onMouseClicked="" text="TOP 10 BOWLERS">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="14.0" layoutY="308.0" onMouseClicked="" text="SEARCH/VIEW PLAYER">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="61.0" layoutY="364.0" onMouseClicked="" text="EXIT">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </JFXButton>
+                <Label layoutX="40.0" layoutY="14.0" text="MAIN MENU" underline="true">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <JFXButton layoutX="59.0" layoutY="419.0" onMouseClicked="" text="IPL Song" />
+            </children>
+        </AnchorPane>
+        <ImageView fx:id="ivCSK" fitHeight="430.0" fitWidth="270.0" layoutX="184.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="img/csk (1).jpg" />
+            </image>
+        </ImageView>
+         
+        <ImageView fx:id="ivKingsX1Punjab" fitHeight="580.0" fitWidth="270.0" layoutX="459.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="img/kings.jpg" />
+            </image>
+        </ImageView>
+         
+        <ImageView fx:id="ivMumbaiIndians" fitHeight="200.0" fitWidth="270.0" layoutX="715.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="img/MUmbai indians team.jpg" />
+            </image>
+        </ImageView>
+         
+        <ImageView fx:id="ivRoyalChallengersBanglore" fitHeight="554.0" fitWidth="270.0" layoutX="186.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="img/royal team.jpg" />
+            </image>
+        </ImageView>
+         
+        <ImageView fx:id="ivIPLLogo" fitHeight="250.0" fitWidth="280.0" layoutX="450.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="img/vivo ipl.jpg" />
+            </image>
+        </ImageView>
+         
+        <ImageView fx:id="ivRajasthanRoyals" fitHeight="190.0" fitWidth="270.0" layoutX="725.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="img/rajasthan.jpg" />
+            </image>
+        </ImageView>
+         
+        <ImageView fx:id="ivKolkataKnightRiders" fitHeight="200.0" fitWidth="263.0" layoutX="186.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="img/kolkata team.jpg" />
+            </image>
+        </ImageView>
+         
+        <ImageView fx:id="ivSunrisesHyderabad" fitHeight="200.0" fitWidth="268.0" layoutX="450.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="img/sunrise hyderabAD.jpg" />
+            </image>
+        </ImageView>
+         
+        <ImageView fx:id="ivDelhiCapitals" fitHeight="200.0" fitWidth="260.0" layoutX="721.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="img/delhi team.jpg" />
+            </image>
+        </ImageView>
+         
+    </children>
+
+</AnchorPane>

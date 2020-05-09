@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.validation.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rfvtxtTotalMatchesPlayed" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iplworld.FXMLDocumentController">
+   <children>
+      <Label layoutX="43.0" layoutY="75.0" text="Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtPlayerName" labelFloat="true" layoutX="154.0" layoutY="63.0" promptText="Enter Player Name" />
+      <Label layoutX="29.0" layoutY="127.0" text="Date Of Birth">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpPlayerDOB" layoutX="154.0" layoutY="125.0" promptText="Select DOB" />
+      <Label layoutX="45.0" layoutY="186.0" text="Role">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="rbIsAllRounder" layoutX="132.0" layoutY="188.0" prefHeight="17.0" prefWidth="112.0" text="All Rounder" textFill="#171717">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tg" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <Label layoutX="44.0" layoutY="240.0" text="Team">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cbPlayerTeam" labelFloat="true" layoutX="188.0" layoutY="238.0" promptText="Select Team" />
+      <Label layoutX="12.0" layoutY="303.0" text="Total Matches Played">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTotalMatches" labelFloat="true" layoutX="181.0" layoutY="301.0" prefHeight="25.0" prefWidth="158.0" promptText="Enter Total Matches Played" />
+      <Label layoutX="14.0" layoutY="347.0" text="Total Innings Played">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTotalInnings" labelFloat="true" layoutX="181.0" layoutY="345.0" prefHeight="25.0" prefWidth="149.0" promptText="Enter Total Innings Played" />
+      <Label layoutX="374.0" layoutY="348.0" prefHeight="20.0" prefWidth="158.0" text="Total No. of  Not Outs">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTotalNoOfNotOuts" labelFloat="true" layoutX="563.0" layoutY="345.0" prefHeight="25.0" prefWidth="149.0" promptText="Enter Total No. Of Not Outs" />
+      <Label layoutX="749.0" layoutY="347.0" text="Total Wickets Taken">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="398.0" text="100's">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="445.0" prefHeight="27.0" prefWidth="35.0" text="50's">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="749.0" layoutY="398.0" text="Best Bowling Figure">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="419.0" layoutY="398.0" text="Best Score">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="419.0" layoutY="497.0" text="Total Ducks">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="rbIsBatsmen" layoutX="270.0" layoutY="188.0" prefHeight="17.0" prefWidth="79.0" text="Batsman" textFill="#111010" toggleGroup="$tg">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rbIsBowler" layoutX="390.0" layoutY="188.0" text="Bowler" textFill="#252323" toggleGroup="$tg">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXRadioButton>
+      <Label layoutX="394.0" layoutY="303.0" text="Total Runs Scored">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTotalRuns" labelFloat="true" layoutX="567.0" layoutY="301.0" prefHeight="25.0" prefWidth="141.0" promptText="Enter Total Runs" />
+      <JFXTextField fx:id="txtTotalWickets" labelFloat="true" layoutX="915.0" layoutY="345.0" promptText="Enter Total Wickets" />
+      <JFXTextField fx:id="txtTotalHundreds" labelFloat="true" layoutX="181.0" layoutY="396.0" promptText="Enter Total Hundreds" />
+      <JFXTextField fx:id="txtTotalFifties" labelFloat="true" layoutX="179.0" layoutY="446.0" promptText="Enter Total Fifties" />
+      <JFXTextField fx:id="txtBestScore" labelFloat="true" layoutX="563.0" layoutY="386.0" promptText="Enter Highest Score" />
+      <JFXTextField fx:id="txtBestBowlingFigure" labelFloat="true" layoutX="915.0" layoutY="396.0" promptText="Enter Best Bowling Figure" />
+      <JFXTextField fx:id="txtTotalDucks" labelFloat="true" layoutX="563.0" layoutY="485.0" promptText="Enter Total Ducks" />
+      <Label layoutX="328.0" layoutY="18.0" prefHeight="35.0" prefWidth="244.0" text="ADD A NEW PLAYER" textFill="#1d1d1e">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ivPlayerProfilePic" fitHeight="180.0" fitWidth="221.0" layoutX="572.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true" />
+      <HBox layoutX="690.0" layoutY="543.0" prefHeight="51.0" prefWidth="373.0" spacing="10.0">
+         <children>
+            <JFXButton onAction="#savePlayerDetails" style="-fx-border-color: black;" text="SAVE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#resetPlayerDetails" style="-fx-border-color: black;" text="RESET">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#exitfunction" style="-fx-border-color: black;" text="EXIT">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#backToMainMenu" style="-fx-border-color: black;" text="BACK TO MAIN MENU">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Label layoutX="759.0" layoutY="448.0" prefHeight="20.0" prefWidth="133.0" text="Total Balls Bowled">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="759.0" layoutY="304.0" text="Total Runs Given">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTotalBallsBowled" labelFloat="true" layoutX="915.0" layoutY="446.0" promptText="Enter Total Balls Bowled" />
+      <JFXTextField fx:id="txtTotalRunsGiven" labelFloat="true" layoutX="915.0" layoutY="301.0" promptText="Enter Total Runs Given" />
+      <JFXButton buttonType="RAISED" layoutX="628.0" layoutY="247.0" onAction="#selectPlayerImage" style="-fx-border-color: black;" text="Select Image" textFill="#1b1a1b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="398.0" layoutY="448.0" text="Total Balls Faced">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTotalNoOfBallsFaced" labelFloat="true" layoutX="559.0" layoutY="436.0" prefHeight="25.0" prefWidth="158.0" promptText="Enter Total no. of balls faced" />
+      <RequiredFieldValidator fx:id="rfvtxtTotalMatches" layoutX="188.0" layoutY="498.0" message="Please enter total matches played." scaleX="160.0" scaleY="30.0" src="txtTotalMatches" />
+   </children>
+</AnchorPane>

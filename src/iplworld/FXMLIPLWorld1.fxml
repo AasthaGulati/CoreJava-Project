@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iplworld.FXMLIPLWorld1Controller">
+   <children>
+      <JFXComboBox fx:id="cbPlayerTeam" layoutX="175.0" layoutY="47.0" maxWidth="176.0" onAction="#fillPlayerAllDetails" prefHeight="25.0" prefWidth="176.0" promptText="   ---Select Team---" visibleRowCount="8" />
+      <Label layoutX="453.0" layoutY="249.0" text="Total Matches">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="456.0" layoutY="298.0" text="Total Innings">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="679.0" layoutY="249.0" text="Total Runs Scored">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="946.0" layoutY="298.0" text="Total Wickets">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="937.0" layoutY="383.0" text="Total Balls Bowled">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="935.0" layoutY="249.0" text="Total Runs Given">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="672.0" layoutY="298.0" text="Total No. Of Not Outs">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="449.0" layoutY="341.0" text="Total Hundreds">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="448.0" layoutY="380.0" prefHeight="25.0" prefWidth="80.0" text="Total Fifties">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="695.0" layoutY="339.0" text="Best Score">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="926.0" layoutY="338.0" text="Best Bowling Figure">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="452.0" layoutY="433.0" text="Total Ducks">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="477.0" layoutY="41.0" text="Player Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="476.0" layoutY="99.0" text="Date of Birth">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="473.0" layoutY="202.0" prefHeight="17.0" prefWidth="30.0" text="Role">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <JFXTextField fx:id="txtPlayerName" layoutX="592.0" layoutY="35.0" prefHeight="25.0" prefWidth="117.0" />
+      <JFXTextField fx:id="txtTotalMatches" layoutX="555.0" layoutY="238.0" prefHeight="25.0" prefWidth="71.0" />
+      <JFXTextField fx:id="txtTotalInnings" layoutX="553.0" layoutY="282.0" prefHeight="9.0" prefWidth="75.0" />
+      <JFXTextField fx:id="txtTotalRuns" layoutX="820.0" layoutY="237.0" prefHeight="3.0" prefWidth="75.0" />
+      <JFXTextField fx:id="txtTotalWickets" layoutX="1077.0" layoutY="278.0" prefHeight="25.0" prefWidth="75.0" />
+      <JFXTextField fx:id="txtTotalBallsBowled" layoutX="1077.0" layoutY="371.0" prefHeight="25.0" prefWidth="75.0" />
+      <JFXTextField fx:id="txtTotalRunsGiven" layoutX="1075.0" layoutY="238.0" prefHeight="0.0" prefWidth="75.0" />
+      <JFXTextField fx:id="txtTotalNoOfNotOuts" layoutX="820.0" layoutY="287.0" prefHeight="25.0" prefWidth="75.0" />
+      <JFXTextField fx:id="txtTotalHundreds" layoutX="553.0" layoutY="329.0" prefHeight="25.0" prefWidth="75.0" />
+      <JFXTextField fx:id="txtTotalFifties" layoutX="553.0" layoutY="371.0" prefHeight="25.0" prefWidth="75.0" />
+      <JFXTextField fx:id="txtBestScore" layoutX="820.0" layoutY="329.0" prefHeight="25.0" prefWidth="75.0" />
+      <JFXTextField fx:id="txtBestBowlingFigure" layoutX="1077.0" layoutY="323.0" prefHeight="25.0" prefWidth="75.0" />
+      <JFXTextField fx:id="txtTotalDucks" layoutX="555.0" layoutY="421.0" prefHeight="25.0" prefWidth="71.0" />
+      <DatePicker fx:id="dpPlayerDOB" layoutX="591.0" layoutY="97.0" prefHeight="25.0" prefWidth="150.0" />
+      <JFXRadioButton fx:id="rbIsAllRounder" layoutX="544.0" layoutY="203.0" prefHeight="17.0" prefWidth="113.0" text="All Rounder">
+         <toggleGroup>
+            <ToggleGroup fx:id="tg" />
+         </toggleGroup>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rbIsBatsmen" layoutX="690.0" layoutY="203.0" text="Batsmen" toggleGroup="$tg">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></JFXRadioButton>
+      <JFXRadioButton fx:id="rbIsBowler" layoutX="830.0" layoutY="203.0" prefHeight="17.0" prefWidth="82.0" text="Bowler" toggleGroup="$tg">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></JFXRadioButton>
+      <TableView fx:id="tvPlayerDetails" layoutX="56.0" layoutY="128.0" onMouseReleased="#mouseRelease" prefHeight="485.0" prefWidth="353.0">
+         <columns>
+            <TableColumn fx:id="tcPlayerName" prefWidth="122.0" text="Player Name" />
+            <TableColumn fx:id="tcPlayerDOB" prefWidth="120.0" text="Date Of Birth" />
+            <TableColumn fx:id="tcPlayerRole" prefWidth="109.0" text="Player Role" />
+            <TableColumn fx:id="tcPlayerId" prefWidth="57.0" text="ID" visible="false" />
+         </columns>
+      </TableView>
+      <HBox layoutX="650.0" layoutY="560.0" prefHeight="44.0" prefWidth="458.0" spacing="5.0">
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#updatePlayerDetails" style="-fx-border-color: black;" text="UPDATE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+              </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#deleteTeamPlayer" prefHeight="20.0" prefWidth="71.0" style="-fx-border-color: black;" text="DELETE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#exitfunction" prefHeight="32.0" prefWidth="48.0" style="-fx-border-color: black;" text="EXIT">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               </JFXButton>
+            <JFXButton onAction="#backToMainMenu" prefHeight="32.0" prefWidth="164.0" style="-fx-border-color: black;" text="BACK TO MAIN MENU">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+              </JFXButton>
+            <JFXButton onAction="#resetPlayerDetails" style="-fx-border-color: black;" text="RESET">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Label layoutX="685.0" layoutY="433.0" text="Batting Average">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="941.0" layoutY="433.0" text="Bowling Average">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="1077.0" layoutY="420.0" prefHeight="17.0" prefWidth="75.0" />
+      <Label layoutX="939.0" layoutY="485.0" text="Bowling Economy">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="682.0" layoutY="485.0" text="Batting Strike Rate">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="669.0" layoutY="383.0" text="Total No of Balls Faced">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTotalNoOfBallsFaced" layoutX="827.0" layoutY="371.0" prefHeight="25.0" prefWidth="75.0" />
+      <Label fx:id="txtBattingAverage" layoutX="833.0" layoutY="421.0" prefHeight="25.0" prefWidth="50.0" />
+      <Label fx:id="txtBowlingAverage" layoutX="1087.0" layoutY="429.0" prefHeight="17.0" prefWidth="50.0" />
+      <Label fx:id="txtBattingStrikeRate" layoutX="833.0" layoutY="477.0" prefHeight="17.0" prefWidth="37.0" />
+      <Label fx:id="txtBowlingEconomy" layoutX="1087.0" layoutY="486.0" prefHeight="17.0" prefWidth="37.0" />
+      <ImageView fx:id="ivIPlayerProfilePic" fitHeight="164.0" fitWidth="200.0" layoutX="960.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="56.0" layoutY="51.0" text="Select Team">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="1015.0" layoutY="198.0" onAction="#selectPlayerImage" style="-fx-border-color: black;" text="Select Image">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="476.0" layoutY="147.0" prefHeight="17.0" prefWidth="75.0" text=" Team">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cbupdatePlayerTeam" layoutX="591.0" layoutY="144.0" prefHeight="25.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
